@@ -1,0 +1,21 @@
+[
+	{
+		"version": "2.0.0",
+		"downloadUrl": "https://github.com/stefanfriedrich/CraftDate2Calendar/archive/master.zip",
+		"date": "2016-09-16T10:10:00-00:00",
+		"notes": [
+			"[Added] Supports now .ics-files.",
+			"[Improved] Flexible dates in case of trouble with the servertime.",
+		]
+	},
+
+	{
+		"version": "1.0.0",
+		"downloadUrl": "https://github.com/stefanfriedrich/CraftDate2Calendar/archive/master.zip",
+		"date": "2016-09-09T10:10:00-00:00",
+		"notes": [
+			"[Added] Initial release.",
+			"[Added] Craft will notify you of updates available for this plugin from the update page.",
+		]
+	}
+]
