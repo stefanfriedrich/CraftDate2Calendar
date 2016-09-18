@@ -39,7 +39,11 @@ In return you'll get an url that creates an entry in Google Calendar when called
 ## Options
 
 {{ entry | date2calendar }} 			=> returns the link for google calendar
+
 {{ entry | date2calendar('GC') }} 		=> returns the link for google calendar
+
 {{ entry | date2calendar('ICS') }} 		=> downloads an ics-file for outlook, ical, whatever..
+
 {{ entry | date2calendar('GC', +2) }} 	=> returns the link for google calendar with the date plus 2 hours 
+
 {{ entry | date2calendar('ICS', -2) }} 	=> returns the link for google calendar with the date minus 2 hours 
