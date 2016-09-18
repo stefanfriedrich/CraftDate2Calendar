@@ -45,21 +45,23 @@ class Date2calendarTwigExtension extends Twig_Extension {
 			foreach ($entries as $entry)
 			{
 
-				$arrEvent["start"]  		= $entry->start->getTimestamp() ;
-				$arrEvent["end"]  			= $entry->end->getTimestamp();
-				$arrEvent["title"]    		= $entry->title;
-				$arrEvent["description"] 	= $entry->description;
-				$arrEvent["location"] 		= $entry->location;
+				$strStart  			= $entry->start->getTimestamp() + $extratime;
+				$strEnd  			= $entry->end->getTimestamp() + $extratime;
+				$eventTitle    		= $this->escapeString($entry->title);
+				$eventDescription 	= $this->escapeString($entry->description);
+				$eventLocation 		= $this->escapeString($entry->location);
 
 			}
 
-		} 
+		} else {
 
-		$strStart  			= $arrEvent["start"] + $extratime;
-		$strEnd  			= $arrEvent["end"] + $extratime;
-		$eventTitle    		= $this->escapeString($arrEvent["title"]);
-		$eventDescription 	= $this->escapeString($arrEvent["description"]);
-		$eventLocation 		= $this->escapeString($arrEvent["location"]);
+			$strStart  			= $arrEvent["start"] + $extratime;
+			$strEnd  			= $arrEvent["end"] + $extratime;
+			$eventTitle    		= $this->escapeString($arrEvent["title"]);
+			$eventDescription 	= $this->escapeString($arrEvent["description"]);
+			$eventLocation 		= $this->escapeString($arrEvent["location"]);
+
+		}
 
 
 		// link to download ics-file
