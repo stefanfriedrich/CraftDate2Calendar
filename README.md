@@ -11,10 +11,15 @@ Go to Settings > Plugins from your Craft control panel and enable the Date2Calen
 ## Usage
 
 Simple usage if your entryfields for the event are named like this:
+
 entry.start
+
 entry.end
+
 entry.title
+
 entry.description
+
 entry.location
 
 If so, use this:
