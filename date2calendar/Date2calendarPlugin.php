@@ -29,7 +29,7 @@ class Date2calendarPlugin extends BasePlugin
      */
     public function getVersion()
     {
-        return '1.5.0';
+        return '2.0.0'; /** Says it needs to update to 2.0.0 still */
     }
 
     /**
